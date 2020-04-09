@@ -13125,11 +13125,10 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[93]:</div>
+<div class="prompt input_prompt">In&nbsp;[94]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;3_f_1.csv&quot;</span><span class="p">,</span> <span class="n">delimiter</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">([</span><span class="nb">int</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;arr&#39;</span><span class="p">]])</span>
 <span class="n">df</span>
 </pre></div>
 
@@ -13143,18 +13142,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[926, 914, 885, 874, 879, 894, 880, 897, 932, 944, 948, 921, 861, 848, 880, 895, 912, 986, 1000, 946, 950, 971, 966, 907, 843, 886, 907, 904, 879, 874, 914, 922, 962, 987, 958, 920, 933, 922, 943, 936, 893, 929, 930, 926, 973, 976, 954, 933, 950, 910, 897, 947, 939, 867, 897, 975, 1013, 927, 931, 907, 864, 873, 912, 933, 940, 883, 860, 870, 831, 813, 851, 841, 847, 865, 831, 806, 799, 782, 801, 841, 891, 826, 806, 840, 941, 960, 930, 903, 897, 908, 933, 954, 987, 967, 979, 971, 950, 919, 900, 880, 802, 792, 869, 953, 1047, 965, 968, 956, 918, 885, 912, 949, 940, 958, 1038, 1026, 960, 1003, 967, 927, 940, 924, 906, 913, 893, 843, 874, 955, 1105, 1039, 943, 851, 850, 872, 874, 891, 895, 877, 879, 872, 839, 801, 841, 962, 1019, 1005, 968, 951, 944, 908, 936, 940, 924, 942, 944, 938, 903, 879, 891, 924, 897, 926, 940, 862, 870, 885, 898, 892, 874, 855, 800, 825, 901, 975, 998, 965, 947, 936, 885, 882, 911, 894, 896, 923, 955, 926, 898, 926, 924, 911, 872, 866, 882, 917, 908, 886, 909, 919, 926, 870, 835, 877, 920, 942, 939, 923, 890, 909, 930, 917, 918, 923, 908, 910, 897, 808, 806, 771, 770, 744, 775, 849, 913, 956, 964, 953, 887, 861, 818, 784, 798, 828, 904, 1020, 1133, 1147, 967, 1011, 950, 825, 843, 901, 1009, 1031, 914, 955, 965, 942, 917, 885, 833, 840, 858, 946, 1001, 969, 998, 941, 944, 957, 923, 916, 880, 880, 871, 844, 862, 898, 937, 878, 894, 889, 873, 847, 841, 820, 797, 769, 777, 854, 910, 917, 948, 951, 925, 885, 809, 782, 782, 758, 868, 947, 962, 983, 965, 862, 867, 882, 886, 897]
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[93]:</div>
+    <div class="prompt output_prompt">Out[94]:</div>
 
 
 
@@ -13352,7 +13340,7 @@ CV = 6.697554903592261.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[64]:</div>
+<div class="prompt input_prompt">In&nbsp;[95]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">11</span><span class="p">,</span> <span class="mf">5.2</span><span class="p">))</span>
@@ -13360,7 +13348,6 @@ CV = 6.697554903592261.
 <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">commutes1</span><span class="p">:</span>
     <span class="n">commutes2</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([</span><span class="nb">float</span><span class="p">(</span><span class="n">j</span> <span class="o">/</span> <span class="mi">1000</span><span class="p">)</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">i</span><span class="p">])</span>
     <span class="n">n1</span><span class="p">,</span> <span class="n">bins1</span><span class="p">,</span> <span class="n">patches1</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">commutes2</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;#607c8e&#39;</span><span class="p">)</span>
-    <span class="c1">#print(bins1)</span>
     <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span> <span class="ow">and</span> <span class="n">i</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">-</span><span class="n">i</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
         <span class="n">n</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
     <span class="k">else</span><span class="p">:</span>
